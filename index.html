@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HUA老師的 AI 教學天地</title>
+<style>
+*{box-sizing:border-box;font-family:"Microsoft JhengHei","Noto Sans TC",sans-serif}
+body{margin:0;min-height:100vh;color:#5a3d2b;
+background:linear-gradient(180deg,#bfe9ff 0%,#e3f7ff 30%,#fff6e8 70%,#ffeef5 100%);}
+.cloud{position:fixed;background:#fff;border-radius:50px;opacity:.8;z-index:0;animation:drift 14s ease-in-out infinite alternate}
+.cloud::before,.cloud::after{content:"";position:absolute;background:#fff;border-radius:50%}
+.cloud.c1{width:120px;height:36px;top:60px;left:6%}
+.cloud.c1::before{width:50px;height:50px;top:-22px;left:16px}
+.cloud.c1::after{width:36px;height:36px;top:-14px;left:64px}
+.cloud.c2{width:150px;height:42px;top:150px;right:5%;animation-delay:-6s}
+.cloud.c2::before{width:60px;height:60px;top:-26px;left:24px}
+.cloud.c2::after{width:42px;height:42px;top:-16px;left:88px}
+@keyframes drift{from{transform:translateX(-16px)}to{transform:translateX(16px)}}
+.wrap{position:relative;z-index:1;max-width:1000px;margin:0 auto;padding:20px 16px 60px}
+header{text-align:center;background:rgba(255,255,255,.85);border:4px solid #ffb3c7;border-radius:28px;padding:24px 16px;box-shadow:0 8px 0 #f4a3b8}
+header h1{margin:0;font-size:34px;color:#e0447c;text-shadow:1px 2px 0 #ffe3ec}
+header p{margin:8px 0 0;font-size:17px;color:#8a6d4b}
+.badges{margin-top:10px;display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
+.badge{background:#fff3b0;border:2px solid #e0a800;border-radius:20px;padding:4px 14px;font-weight:700;font-size:14px}
+.qr{display:flex;gap:18px;align-items:center;justify-content:center;flex-wrap:wrap;background:rgba(255,255,255,.9);border:4px dashed #7cc6ff;border-radius:24px;padding:18px;margin:18px 0}
+.qr img{width:200px;height:200px;border-radius:16px;border:4px solid #fff;box-shadow:0 4px 12px rgba(0,0,0,.15);background:#fff}
+.qr .t{max-width:420px;text-align:left}
+.qr .t h2{margin:0 0 6px;color:#2d9cdb}
+.qr .t p{margin:4px 0}
+.urlcode{background:#0f1633;color:#7df9ff;border-radius:10px;padding:6px 12px;font-size:14px;word-break:break-all;display:inline-block}
+h2.grade{font-size:24px;margin:26px 4px 10px;color:#b5651d}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media(max-width:640px){.grid{grid-template-columns:1fr}header h1{font-size:26px}}
+.card{background:#fff;border-radius:22px;padding:16px;border:3px solid #ffd6a5;box-shadow:0 6px 0 #f0c08a}
+.card h3{margin:0 0 10px;font-size:20px}
+.sem{display:flex;align-items:center;justify-content:space-between;gap:10px;background:#fff8ec;border:2px solid #ffe0b3;border-radius:14px;padding:10px 12px;margin:8px 0}
+.sem b{font-size:17px}
+.soon{color:#b0a08a;font-size:14px;background:#f3efe6;border-radius:10px;padding:6px 12px}
+.play{display:inline-block;text-decoration:none;background:linear-gradient(180deg,#ffe066,#ff9f1c);color:#4a2500;font-weight:800;border-radius:12px;padding:10px 16px;box-shadow:0 4px 0 #a85b00;font-size:16px}
+.play:active{transform:translateY(3px);box-shadow:none}
+.new{font-size:12px;background:#ff5da2;color:#fff;border-radius:8px;padding:2px 8px;margin-left:6px;vertical-align:middle}
+footer{text-align:center;margin-top:30px;color:#a08060;font-size:14px}
+</style>
+</head>
+<body>
+<div class="cloud c1"></div><div class="cloud c2"></div>
+<div class="wrap">
+<header>
+<h1>🌈 HUA老師的 AI 教學天地 🎮</h1>
+<p>小朋友，點你的年級，開始玩遊戲學數學囉！</p>
+<div class="badges"><span class="badge">✏️ 邊玩邊學</span><span class="badge">🏆 挑戰得分</span><span class="badge">📱 平板可用</span></div>
+</header>
+
+<div class="qr">
+<img src="https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=https%3A%2F%2Fswsr0202-sketch.github.io%2F" alt="網站首頁 QR code">
+<div class="t">
+<h2>📷 上課掃我進首頁！</h2>
+<p>拿平板掃左邊的 QR code，就可以進入這個天地。</p>
+<p><span class="urlcode">https://swsr0202-sketch.github.io/</span></p>
+</div>
+</div>
+
+<h2 class="grade">🌱 低年級</h2>
+<div class="grid">
+<div class="card"><h3>一年級</h3>
+<div class="sem"><b>一上</b><span class="soon">遊戲準備中…</span></div>
+<div class="sem"><b>一下</b><span class="soon">遊戲準備中…</span></div></div>
+<div class="card"><h3>二年級</h3>
+<div class="sem"><b>二上</b><span class="soon">遊戲準備中…</span></div>
+<div class="sem"><b>二下</b><span class="soon">遊戲準備中…</span></div></div>
+</div>
+
+<h2 class="grade">🌷 中年級</h2>
+<div class="grid">
+<div class="card"><h3>三年級</h3>
+<div class="sem"><b>三上</b><span class="soon">遊戲準備中…</span></div>
+<div class="sem"><b>三下</b><span class="soon">遊戲準備中…</span></div></div>
+<div class="card"><h3>四年級</h3>
+<div class="sem"><b>四上</b><span class="soon">遊戲準備中…</span></div>
+<div class="sem"><b>四下</b><span class="soon">遊戲準備中…</span></div></div>
+</div>
+
+<h2 class="grade">🌟 高年級</h2>
+<div class="grid">
+<div class="card" style="border-color:#7cc6ff;box-shadow:0 6px 0 #5aa9e6"><h3>五年級</h3>
+<div class="sem" style="background:#f0f9ff;border-color:#7cc6ff"><b>五上 <span class="new">NEW</span></b><a class="play" href="https://swsr0202-sketch.github.io/gem-duel/">💎 寶石切割 PK：線對稱大挑戰 →</a></div>
+<div class="sem"><b>五下</b><span class="soon">遊戲準備中…</span></div></div>
+<div class="card"><h3>六年級</h3>
+<div class="sem"><b>六上</b><span class="soon">遊戲準備中…</span></div>
+<div class="sem"><b>六下</b><span class="soon">遊戲準備中…</span></div></div>
+</div>
+
+<footer>HUA老師的 AI 教學天地 ｜ 新遊戲會一直加進來，記得把首頁加入書籤喔！🔖</footer>
+</div>
+</body>
+</html>
